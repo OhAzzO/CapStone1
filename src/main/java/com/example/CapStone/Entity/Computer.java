@@ -1,10 +1,15 @@
 package com.example.CapStone.Entity;
 
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 public class Computer {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
     String name;
     String overview;
@@ -12,8 +17,8 @@ public class Computer {
     int price;
 
 
-    public Computer(@JsonProperty("id") int id,@JsonProperty("name") String name,@JsonProperty("overview") String overview,
-                    @JsonProperty("systemComponents") String systemComponents,@JsonProperty("price") int price) {
+    public Computer( int id,String name, String overview,
+                    String systemComponents,int price) {
         this.id = id;
         this.name = name;
         this.overview = overview;

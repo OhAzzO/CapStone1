@@ -4,7 +4,7 @@ import com.example.CapStone.Entity.Computer;
 import com.example.CapStone.Repository.ComputerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PostMapping;
+
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ public class ComputerService{
         this.ComputerRepository = computerRepository;
     }
 
-    @PostMapping
+
     public int addComputerToDataBase(Computer computer) {
         return ComputerRepository.insertComputer(computer);
     }
