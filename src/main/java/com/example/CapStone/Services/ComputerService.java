@@ -12,19 +12,22 @@ import java.util.List;
 public class ComputerService{
 
     @Autowired
-    ComputerRepository ComputerRepository;
+    ComputerRepository computerRepository;
 
     public ComputerService(ComputerRepository computerRepository) {
-        this.ComputerRepository = computerRepository;
+
+        this.computerRepository = computerRepository;
     }
 
 
-    public int addComputerToDataBase(Computer computer) {
-        return ComputerRepository.insertComputer(computer);
+    public void addComputerToDataBase(Computer computer) {
+
+        computerRepository.save(computer);
     }
 
     public List<Computer> getAllComputerFromDataBase() {
-        return ComputerRepository.getAllComputers();
+
+        return computerRepository.findAll();
     }
 }
 

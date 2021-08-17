@@ -1,0 +1,9 @@
+2021-08-17 21:50:06 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SYSTEM_COMPONENTS[*]"; expected "SET, SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"; SQL statement:
+SYSTEM_COMPONENTS [42001-200]
+2021-08-17 21:55:49 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SYSTEM_COMPONENTS[*]"; expected "SET, SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"; SQL statement:
+SYSTEM_COMPONENTS [42001-200]
+2021-08-17 21:55:58 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "NAME[*]"; SQL statement:
+NAME [42000-200]

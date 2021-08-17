@@ -10,30 +10,22 @@ import javax.persistence.Id;
 public class Computer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    int id;
+    Long id;
     String name;
     String overview;
     String systemComponents;
     int price;
 
 
-    public Computer( int id,String name, String overview,
-                    String systemComponents,int price) {
-        this.id = id;
-        this.name = name;
-        this.overview = overview;
-        this.systemComponents = systemComponents;
-        this.price = price;
-    }
 
     public Computer() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

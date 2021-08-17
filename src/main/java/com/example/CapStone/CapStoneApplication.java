@@ -5,14 +5,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CapStoneApplication implements CommandLineRunner {
+public class CapStoneApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CapStoneApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
 
-	}
 }
